@@ -92,7 +92,7 @@ public class FlightFilterTest {
     }
 
     @Test
-    public void testFilterArrivalDateBeforeDepartureDate_SegmentsBeforeDeparture() {
+    public void testFilterArrivalDateBeforeDepartureDateSegmentsBeforeDeparture() {
         // Создаем тестовые рейсы с сегментами, у которых дата прилета раньше даты вылета
         LocalDateTime now = LocalDateTime.now();
         Flight flight = createFlight(now.plusHours(1), now.minusHours(1)); // Рейс с сегментом, у которого дата прилета раньше даты вылета
