@@ -1,7 +1,7 @@
-import com.gridnine.testing.Flight;
-import com.gridnine.testing.FlightBuilder;
-import service.FilterService;
-import service.FilterServiceImpl;
+package com.gridnine.testing;
+
+import com.gridnine.testing.service.FilterService;
+import com.gridnine.testing.service.FilterServiceImpl;
 
 import java.util.List;
 

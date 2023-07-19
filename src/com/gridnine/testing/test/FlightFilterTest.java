@@ -1,11 +1,11 @@
-package test;
+package com.gridnine.testing.test;
 
 import com.gridnine.testing.Flight;
+import com.gridnine.testing.service.FilterService;
+import com.gridnine.testing.service.FilterServiceImpl;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import service.FilterService;
-import service.FilterServiceImpl;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
@@ -77,7 +77,6 @@ public class FlightFilterTest {
     @Test
     public void testFilterArrivalDateBeforeDepartureDateNoSegmentsBeforeDeparture() {
 
-        // Добавляем рейсы, у которых все сегменты правильно сортированы
         flights.add(createFlight(threeDaysFromNow, threeDaysFromNow.plusHours(3)));
         flights.add(createFlight(threeDaysFromNow, threeDaysFromNow.plusHours(2),
                 threeDaysFromNow.plusHours(3), threeDaysFromNow.plusHours(5)));
